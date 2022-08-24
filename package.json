@@ -5,7 +5,9 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "@aws-amplify/datastore": "3.12.8",
     "@react-google-maps/api": "2.12.1",
+    "aws-amplify": "4.3.33",
     "google-map-react": "2.2.0",
     "google-maps-react": "2.0.6",
     "react": "17.0.2",

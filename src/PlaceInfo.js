@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Marker, InfoWindow } from "@react-google-maps/api";
+import Amplify, { DataStore } from "aws-amplify";
 
 export default function PlaceInfo() {
   const places = [
@@ -12,10 +13,14 @@ export default function PlaceInfo() {
       location: { lat: 35.658687875856664, lng: 138.56954332425778 }
     },
     {
-      info: "YSKe-com (D0-ChuoV)",
+      info: "YSKe-com (Do-ChuoV)",
       location: { lat: 35.66014231235642, lng: 138.57494260883726 }
     }
   ];
+  async function fetchPlaces() {
+    const gplaces = await DataStore.query(places);
+    console.log(gplaces);
+  }
 
   const [selected, setSelected] = useState(null);
 
