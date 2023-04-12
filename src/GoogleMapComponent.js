@@ -23,7 +23,7 @@ const options = {
 export default function GoogleMapComponent() {
   const { isLoaded, loadError } = useLoadScript({
     //googleMapsApiKey: process.env.REACT_APP_googleMapsApiKey,
-    googleMapsApiKey: "AIzaSyARN4ZLpzuzwGo2M6PKr2M--juR5zJyrew",
+    googleMapsApiKey: "",
     // ここにAPIキーを入力します。今回は.envに保存しています。''
     libraries
   });
